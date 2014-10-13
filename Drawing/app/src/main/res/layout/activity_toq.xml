@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ToqActivity"
+    android:background="@drawable/fsm">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width = "fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:text="Free Speech Movement"
+            android:textSize="@dimen/large_brush"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:padding="@dimen/small_brush"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="60dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/About"
+        android:textColor="#FF9E48"
+        android:textSize="@dimen/medium_brush"
+        android:padding="@dimen/small_brush"
+        android:textStyle="bold"
+        />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/install_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Install"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_button"
+            android:textStyle="bold"
+            android:textColor="#fff"
+           />
+
+        <Button
+            android:id="@+id/uninstall_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uninstall"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_button"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+        </LinearLayout>
+    <Button
+        android:id="@+id/send_notif_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow Location Tracking"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_button"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+    <LinearLayout
+        android:id="@+id/doc_panel"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_panel"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+</LinearLayout>
